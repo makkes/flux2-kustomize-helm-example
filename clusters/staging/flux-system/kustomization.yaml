@@ -8,9 +8,9 @@ labels:
       toolkit.fluxcd.io/tenant: sre-team
 patches:
   - patch: |
-    - op: replace
-      path: /spec/template/spec/containers/0/image
-      value: fluxcd/helm-controller:449864a63bdaca8ced9113ce35c6f6fe8c733b55
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: fluxcd/helm-controller:449864a63bdaca8ced9113ce35c6f6fe8c733b55
     target:
       kind: Deployment
       name: helm-controller
