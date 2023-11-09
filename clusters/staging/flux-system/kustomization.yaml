@@ -10,7 +10,7 @@ patches:
   - patch: |
       - op: replace
         path: /spec/template/spec/containers/0/image
-        value: us-central1-docker.pkg.dev/max-dev-401508/fluxcd/helm-controller:449864a63bdaca8ced9113ce35c6f6fe8c733b55
+        value: ghcr.io/fluxcd/helm-controller:v2beta2-e1e2d151
     target:
       kind: Deployment
       name: helm-controller
