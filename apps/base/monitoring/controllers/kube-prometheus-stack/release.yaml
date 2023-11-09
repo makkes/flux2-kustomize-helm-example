@@ -23,13 +23,13 @@ spec:
   # https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml
   values:
     alertmanager:
-      enabled: whatever
+      enabled: false
     prometheus:
       prometheusSpec:
         retention: 12h
         resources:
           requests:
-            cpu: 250m
+            cpu: 250J
             memory: 200Mi
         podMonitorNamespaceSelector: { }
         podMonitorSelector:
