@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: podinfo
 resources:
   - ../base/podinfo
-  - ../base/monitoring
+  - monitoring.yaml
 patches:
   - path: podinfo-values.yaml
     target:
