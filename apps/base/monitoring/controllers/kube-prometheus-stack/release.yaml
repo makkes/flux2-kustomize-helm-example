@@ -26,10 +26,10 @@ spec:
       enabled: false
     prometheus:
       prometheusSpec:
-        retention: 24h
+        retention: 12h
         resources:
           requests:
-            cpu: 200m
+            cpu: 250m
             memory: 200Mi
         podMonitorNamespaceSelector: { }
         podMonitorSelector:
@@ -37,7 +37,7 @@ spec:
             app.kubernetes.io/component: monitoring
     grafana:
       defaultDashboardsEnabled: false
-      adminPassword: flux
+      adminPassword: foobar
   postRenderers:
     - kustomize:
         patches:
