@@ -29,7 +29,7 @@ spec:
         retention: 12h
         resources:
           requests:
-            cpu: 250J
+            cpu: 250m
             memory: 200Mi
         podMonitorNamespaceSelector: { }
         podMonitorSelector:
